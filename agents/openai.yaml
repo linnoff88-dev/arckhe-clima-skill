@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clima"
+  short_description: "Previsões, riscos e qualidade do ar"
+  default_prompt: "Use $clima-skill para consultar o clima e resumir os impactos para minha rotina."
