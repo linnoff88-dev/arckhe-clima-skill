@@ -12,12 +12,12 @@ meteorolÃ³gico pela API **Open-Meteo** â€” sem chave de API.
 
 ## ðŸ“– Guia de uso
 
-Guia completo (landing + passo a passo): **https://inematds.github.io/clima-skill/guia/**
+Guia completo (landing + passo a passo): **https://linnoff88-dev.github.io/
 
 ## InstalaÃ§Ã£o
 
 ```bash
-git clone https://github.com/inematds/clima-skill ~/.claude/skills/clima
+git clone https://github.com/linnoff88-dev/clima-skill ~/.claude/skills/clima
 ```
 
 ## Uso rÃ¡pido
