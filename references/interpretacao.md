@@ -1,8 +1,8 @@
-# Interpretação meteorológica
+# Interpretaçêo meteorológica
 
 ## Códigos WMO
 
-| Código | Condição |
+| Código | Condiçêo |
 |---|---|
 | 0 | céu limpo |
 | 1–3 | pouco nublado a encoberto |
@@ -17,13 +17,13 @@
 
 ## Índice UV
 
-| Faixa | Categoria | Orientação geral |
+| Faixa | Categoria | Orientaçêo geral |
 |---|---|---|
-| 0–2 | baixo | proteção básica |
+| 0–2 | baixo | proteçêo básica |
 | 3–5 | moderado | sombra, roupa e protetor |
-| 6–7 | alto | reduzir exposição no pico |
-| 8–10 | muito alto | evitar exposição prolongada |
-| 11+ | extremo | proteção máxima |
+| 6–7 | alto | reduzir exposiçêo no pico |
+| 8–10 | muito alto | evitar exposiçêo prolongada |
+| 11+ | extremo | proteçêo máxima |
 
 ## AQI dos EUA
 
@@ -50,12 +50,12 @@ O script marca, por dia:
 - frio intenso: mínima de no máximo 5 °C;
 - UV muito alto: índice máximo de pelo menos 8.
 
-Esses limiares são sinais práticos, não critérios universais nem alertas oficiais. Contextualizar clima local, vulnerabilidade, duração e atividade. Não concluir risco de enchente apenas por chuva ou vazão modelada.
+Esses limiares sêo sinais práticos, nêo critérios universais nem alertas oficiais. Contextualizar clima local, vulnerabilidade, duraçêo e atividade. Nêo concluir risco de enchente apenas por chuva ou vazêo modelada.
 
 ## Linguagem
 
-- Dizer “probabilidade de precipitação”, não “percentual da cidade que receberá chuva”.
+- Dizer “probabilidade de precipitaçêo”, nêo “percentual da cidade que receberá chuva”.
 - Separar chance, intensidade e acumulado.
-- Distinguir temperatura do ar de sensação térmica.
+- Distinguir temperatura do ar de sensaçêo térmica.
 - Usar horários locais e datas absolutas.
-- Em comparação de destinos, aplicar a mesma janela e as mesmas métricas.
+- Em comparaçêo de destinos, aplicar a mesma janela e as mesmas métricas.

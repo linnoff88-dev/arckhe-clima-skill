@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Clima â€” skill de meteorologia para o Claude, sem chave de API</title>
-<meta name="description" content="Skill que consulta clima, previsÃ£o, qualidade do ar, condiÃ§Ãµes marÃ­timas, vazÃ£o de rios e histÃ³rico meteorolÃ³gico pela API Open-Meteo, sem chave de API.">
+<title>Clima ê¢â¬â skill de meteorologia para o Claude, sem chave de API</title>
+<meta name="description" content="Skill que consulta clima, previsêÂ£o, qualidade do ar, condiêÂ§êÂµes marêÂ­timas, vazêÂ£o de rios e histêÂ³rico meteorolêÂ³gico pela API Open-Meteo, sem chave de API.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -36,8 +36,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .ARCKHÉ:hover{filter:brightness(1.15)}
+  nav .ARCKHê{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHê:hover{filter:brightness(1.15)}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro:hover{filter:brightness(1.15)}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
@@ -92,20 +92,20 @@
 <body>
 
 <nav><div class="wrap">
-  <a class="brand" href="#top"><span class="emoji">ðŸŒ¦ï¸</span> Clima</a>
+  <a class="brand" href="#top"><span class="emoji">ê°Å¸ÅÂ¦ê¯Â¸Â</span> Clima</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
+    <a class="ARCKHê" href="https://ARCKHê AI" target="_blank" rel="noopener">ARCKHê AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHê.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
-    <a class="sec" href="#oque">O que Ã©</a>
+    <a class="sec" href="#oque">O que êÂ©</a>
     <a class="sec" href="#fluxo">Como funciona</a>
     <a class="sec" href="#guia">Guia de uso</a>
     <a class="sec" href="#exemplos">Exemplos</a>
     <a class="sec" href="#roadmap">Roadmap</a>
-    <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">ðŸŒ™</button>
+    <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">ê°Å¸Åâ¢</button>
     <a class="btn" href="https://github.com/linnoff88-dev/clima-skill" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
@@ -114,11 +114,11 @@
   <div class="glow"></div>
   <div class="wrap">
     <div>
-      <span class="chip">Skill Â· Claude Â· Open-Meteo</span>
-      <h1>O tempo, interpretado â€” <span class="amb">sem chave de API</span>.</h1>
-      <p class="lead">Uma skill que consulta previsÃ£o, qualidade do ar, mar, rios e histÃ³rico no Open-Meteo â€” e responde o que isso significa para a sua atividade.</p>
+      <span class="chip">Skill êÂ· Claude êÂ· Open-Meteo</span>
+      <h1>O tempo, interpretado ê¢â¬â <span class="amb">sem chave de API</span>.</h1>
+      <p class="lead">Uma skill que consulta previsêÂ£o, qualidade do ar, mar, rios e histêÂ³rico no Open-Meteo ê¢â¬â e responde o que isso significa para a sua atividade.</p>
       <div class="cta">
-        <a class="btn" href="#guia">ComeÃ§ar o guia</a>
+        <a class="btn" href="#guia">ComeêÂ§ar o guia</a>
         <a class="btn ghost" href="https://github.com/linnoff88-dev/clima-skill" target="_blank" rel="noopener">Ver no GitHub</a>
       </div>
     </div>
@@ -127,97 +127,97 @@
 </header>
 
 <section id="oque"><div class="wrap">
-  <span class="chip">O que Ã©</span>
-  <h2>Dados meteorolÃ³gicos com leitura prÃ¡tica</h2>
-  <p class="sub">A skill junta um script Python de consulta (<code>scripts/clima.py</code>) a um guia de interpretaÃ§Ã£o. O Claude busca o dado certo, lÃª sÃ³ os campos relevantes Ã  pergunta e responde com conclusÃ£o, janela de tempo, nÃºmeros essenciais e recomendaÃ§Ã£o.</p>
+  <span class="chip">O que êÂ©</span>
+  <h2>Dados meteorolêÂ³gicos com leitura prêÂ¡tica</h2>
+  <p class="sub">A skill junta um script Python de consulta (<code>scripts/clima.py</code>) a um guia de interpretaêÂ§êÂ£o. O Claude busca o dado certo, lêÂª sêÂ³ os campos relevantes êÂ  pergunta e responde com conclusêÂ£o, janela de tempo, nêÂºmeros essenciais e recomendaêÂ§êÂ£o.</p>
   <div class="grid g3">
-    <div class="card"><h3>ðŸ”“ Sem cadastro</h3><p>Todos os endpoints do Open-Meteo usados sÃ£o abertos: nenhuma chave, nenhum <code>.env</code>, nenhum limite de conta para consultar.</p></div>
-    <div class="card"><h3>ðŸŒ Seis consultas</h3><p><code>geocode</code>, <code>forecast</code>, <code>air</code>, <code>marine</code>, <code>flood</code> e <code>history</code> â€” do clima atual Ã  reanÃ¡lise entre duas datas.</p></div>
-    <div class="card"><h3>ðŸ§­ InterpretaÃ§Ã£o honesta</h3><p>CÃ³digos WMO, faixas de AQI e nÃ­veis UV documentados; <code>risk_flags</code> Ã© triagem por limiar, nunca alerta oficial. Sem falsa precisÃ£o.</p></div>
+    <div class="card"><h3>ê°Å¸ââ Sem cadastro</h3><p>Todos os endpoints do Open-Meteo usados sêÂ£o abertos: nenhuma chave, nenhum <code>.env</code>, nenhum limite de conta para consultar.</p></div>
+    <div class="card"><h3>ê°Å¸ÅÂ Seis consultas</h3><p><code>geocode</code>, <code>forecast</code>, <code>air</code>, <code>marine</code>, <code>flood</code> e <code>history</code> ê¢â¬â do clima atual êÂ  reanêÂ¡lise entre duas datas.</p></div>
+    <div class="card"><h3>ê°Å¸Â§Â­ InterpretaêÂ§êÂ£o honesta</h3><p>CêÂ³digos WMO, faixas de AQI e nêÂ­veis UV documentados; <code>risk_flags</code> êÂ© triagem por limiar, nunca alerta oficial. Sem falsa precisêÂ£o.</p></div>
   </div>
 </div></section>
 
 <section id="fluxo"><div class="wrap">
   <span class="chip">Como funciona</span>
-  <h2>Da pergunta Ã  recomendaÃ§Ã£o</h2>
-  <p class="sub">O fluxo da skill Ã© fixo: resolver o lugar, escolher a consulta certa, ler sÃ³ o que importa e responder comeÃ§ando pela conclusÃ£o.</p>
+  <h2>Da pergunta êÂ  recomendaêÂ§êÂ£o</h2>
+  <p class="sub">O fluxo da skill êÂ© fixo: resolver o lugar, escolher a consulta certa, ler sêÂ³ o que importa e responder comeêÂ§ando pela conclusêÂ£o.</p>
   <div class="flow">
-    <span>Local + perÃ­odo + atividade</span><span class="arr">â†’</span>
-    <span>geocode</span><span class="arr">â†’</span>
-    <span>consulta (forecast / air / marine / flood / history)</span><span class="arr">â†’</span>
-    <span>interpretaÃ§Ã£o</span><span class="arr">â†’</span>
-    <span>resposta + risco + recomendaÃ§Ã£o</span>
+    <span>Local + perêÂ­odo + atividade</span><span class="arr">ê¢â â</span>
+    <span>geocode</span><span class="arr">ê¢â â</span>
+    <span>consulta (forecast / air / marine / flood / history)</span><span class="arr">ê¢â â</span>
+    <span>interpretaêÂ§êÂ£o</span><span class="arr">ê¢â â</span>
+    <span>resposta + risco + recomendaêÂ§êÂ£o</span>
   </div>
   <div class="grid g3" style="margin-top:26px">
-    <div class="card"><h3>1. Resolver o lugar</h3><p>Nome de cidade vira latitude/longitude. Se houver ambiguidade, a skill apresenta as opÃ§Ãµes ou pede estado/paÃ­s â€” ou aceita coordenadas direto.</p></div>
-    <div class="card"><h3>2. Escolher a consulta</h3><p>Cada subcomando cobre um domÃ­nio. A skill nÃ£o puxa tudo: sÃ³ a consulta que responde Ã  pergunta feita.</p></div>
-    <div class="card"><h3>3. Traduzir em decisÃ£o</h3><p>Roupa, exercÃ­cio, viagem, praia ou saÃºde â€” a recomendaÃ§Ã£o combina temperatura, sensaÃ§Ã£o, vento, chuva, UV e AQI.</p></div>
+    <div class="card"><h3>1. Resolver o lugar</h3><p>Nome de cidade vira latitude/longitude. Se houver ambiguidade, a skill apresenta as opêÂ§êÂµes ou pede estado/paêÂ­s ê¢â¬â ou aceita coordenadas direto.</p></div>
+    <div class="card"><h3>2. Escolher a consulta</h3><p>Cada subcomando cobre um domêÂ­nio. A skill nêÂ£o puxa tudo: sêÂ³ a consulta que responde êÂ  pergunta feita.</p></div>
+    <div class="card"><h3>3. Traduzir em decisêÂ£o</h3><p>Roupa, exercêÂ­cio, viagem, praia ou saêÂºde ê¢â¬â a recomendaêÂ§êÂ£o combina temperatura, sensaêÂ§êÂ£o, vento, chuva, UV e AQI.</p></div>
   </div>
 </div></section>
 
 <section id="pre"><div class="wrap">
-  <span class="chip">PrÃ©-requisitos</span>
-  <h2>O mÃ­nimo para rodar</h2>
-  <p class="sub">NÃ£o hÃ¡ serviÃ§o para subir nem credencial para configurar. SÃ³ Python 3 e conexÃ£o de rede.</p>
+  <span class="chip">PrêÂ©-requisitos</span>
+  <h2>O mêÂ­nimo para rodar</h2>
+  <p class="sub">NêÂ£o hêÂ¡ serviêÂ§o para subir nem credencial para configurar. SêÂ³ Python 3 e conexêÂ£o de rede.</p>
   <div class="grid g3">
-    <div class="card"><h3>Python 3</h3><p>O script usa apenas a biblioteca padrÃ£o â€” nada de <code>pip install</code>.</p><pre><span class="c"># conferir a versÃ£o</span>
+    <div class="card"><h3>Python 3</h3><p>O script usa apenas a biblioteca padrêÂ£o ê¢â¬â nada de <code>pip install</code>.</p><pre><span class="c"># conferir a versêÂ£o</span>
 <span class="k">python3 --version</span></pre></div>
-    <div class="card"><h3>A skill instalada</h3><p>Clone o repositÃ³rio dentro da pasta de skills do Claude.</p><pre><span class="k">git clone</span> <span class="s">https://github.com/linnoff88-dev/clima-skill</span> \
+    <div class="card"><h3>A skill instalada</h3><p>Clone o repositêÂ³rio dentro da pasta de skills do Claude.</p><pre><span class="k">git clone</span> <span class="s">https://github.com/linnoff88-dev/clima-skill</span> \
   <span class="s">~/.claude/skills/clima</span></pre></div>
-    <div class="card"><h3>Acesso ao Open-Meteo</h3><p>Rede liberada para <code>open-meteo.com</code>. Sem chave, sem conta.</p><pre><span class="c"># teste rÃ¡pido</span>
+    <div class="card"><h3>Acesso ao Open-Meteo</h3><p>Rede liberada para <code>open-meteo.com</code>. Sem chave, sem conta.</p><pre><span class="c"># teste rêÂ¡pido</span>
 <span class="k">python3 scripts/clima.py --help</span></pre></div>
   </div>
 </div></section>
 
 <section id="guia"><div class="wrap">
-  <span class="chip">Guia de uso Â· passo a passo</span>
-  <h2>Da instalaÃ§Ã£o Ã  primeira previsÃ£o</h2>
-  <p class="sub">Todos os comandos abaixo rodam a partir da pasta da skill. Use <code>--latitude</code> e <code>--longitude</code> no lugar de <code>--location</code> quando jÃ¡ tiver coordenadas.</p>
+  <span class="chip">Guia de uso êÂ· passo a passo</span>
+  <h2>Da instalaêÂ§êÂ£o êÂ  primeira previsêÂ£o</h2>
+  <p class="sub">Todos os comandos abaixo rodam a partir da pasta da skill. Use <code>--latitude</code> e <code>--longitude</code> no lugar de <code>--location</code> quando jêÂ¡ tiver coordenadas.</p>
 
   <div class="step"><div class="b">1</div><div>
     <h3>Instalar a skill</h3>
-    <p>Clone o repositÃ³rio na pasta de skills do Claude. Na prÃ³xima sessÃ£o o Claude passa a acionar a skill sozinho quando vocÃª perguntar sobre tempo.</p>
+    <p>Clone o repositêÂ³rio na pasta de skills do Claude. Na prêÂ³xima sessêÂ£o o Claude passa a acionar a skill sozinho quando vocêÂª perguntar sobre tempo.</p>
 <pre><span class="k">git clone</span> <span class="s">https://github.com/linnoff88-dev/clima-skill</span> <span class="s">~/.claude/skills/clima</span>
 <span class="k">cd</span> <span class="s">~/.claude/skills/clima</span>  <span class="c"># os comandos seguintes rodam daqui</span></pre>
   </div></div>
 
   <div class="step"><div class="b">2</div><div>
     <h3>Resolver o local</h3>
-    <p>Antes de qualquer previsÃ£o, confirme para onde o nome aponta. Use <code>--country-code</code> para restringir o paÃ­s quando o nome for ambÃ­guo.</p>
-<pre><span class="k">python3 scripts/clima.py geocode --location "SÃ£o Paulo, SP"</span>
+    <p>Antes de qualquer previsêÂ£o, confirme para onde o nome aponta. Use <code>--country-code</code> para restringir o paêÂ­s quando o nome for ambêÂ­guo.</p>
+<pre><span class="k">python3 scripts/clima.py geocode --location "SêÂ£o Paulo, SP"</span>
 <span class="k">python3 scripts/clima.py geocode --location "Santa Cruz" --country-code BR</span>  <span class="c"># desambigua</span></pre>
   </div></div>
 
   <div class="step"><div class="b">3</div><div>
-    <h3>Consultar clima atual e previsÃ£o</h3>
-    <p><code>forecast</code> cobre condiÃ§Ãµes atuais e atÃ© 16 dias. Acrescente <code>--hourly</code> quando a pergunta for sobre horÃ¡rios â€” "chove na hora do jogo?".</p>
-<pre><span class="k">python3 scripts/clima.py forecast --location "SÃ£o Paulo, SP" --days 7</span>
+    <h3>Consultar clima atual e previsêÂ£o</h3>
+    <p><code>forecast</code> cobre condiêÂ§êÂµes atuais e atêÂ© 16 dias. Acrescente <code>--hourly</code> quando a pergunta for sobre horêÂ¡rios ê¢â¬â "chove na hora do jogo?".</p>
+<pre><span class="k">python3 scripts/clima.py forecast --location "SêÂ£o Paulo, SP" --days 7</span>
 <span class="k">python3 scripts/clima.py forecast --location "Curitiba, PR" --days 3 --hourly</span>  <span class="c"># janela por hora</span></pre>
   </div></div>
 
   <div class="step"><div class="b">4</div><div>
-    <h3>Qualidade do ar, UV e pÃ³len</h3>
-    <p><code>air</code> traz AQI, Ã­ndice UV e pÃ³len para atÃ© 7 dias â€” a consulta certa para exercÃ­cio ao ar livre, alergia e grupos sensÃ­veis.</p>
-<pre><span class="k">python3 scripts/clima.py air --location "BrasÃ­lia, DF" --days 5 --hourly</span></pre>
+    <h3>Qualidade do ar, UV e pêÂ³len</h3>
+    <p><code>air</code> traz AQI, êÂ­ndice UV e pêÂ³len para atêÂ© 7 dias ê¢â¬â a consulta certa para exercêÂ­cio ao ar livre, alergia e grupos sensêÂ­veis.</p>
+<pre><span class="k">python3 scripts/clima.py air --location "BrasêÂ­lia, DF" --days 5 --hourly</span></pre>
   </div></div>
 
   <div class="step"><div class="b">5</div><div>
     <h3>Mar e rios</h3>
-    <p><code>marine</code> dÃ¡ ondas, marÃ© modelada, temperatura e correntes; <code>flood</code> dÃ¡ vazÃ£o fluvial modelada. Ambos sÃ£o modelos â€” nÃ£o substituem salvamento, carta nÃ¡utica ou alerta oficial de enchente.</p>
+    <p><code>marine</code> dêÂ¡ ondas, marêÂ© modelada, temperatura e correntes; <code>flood</code> dêÂ¡ vazêÂ£o fluvial modelada. Ambos sêÂ£o modelos ê¢â¬â nêÂ£o substituem salvamento, carta nêÂ¡utica ou alerta oficial de enchente.</p>
 <pre><span class="k">python3 scripts/clima.py marine --location "Ubatuba, SP" --days 5</span>
 <span class="k">python3 scripts/clima.py flood --location "Blumenau, SC" --days 14</span></pre>
   </div></div>
 
   <div class="step"><div class="b">6</div><div>
-    <h3>HistÃ³rico entre duas datas</h3>
-    <p><code>history</code> usa reanÃ¡lise para comparar perÃ­odos, checar uma data passada ou montar mÃ©dias.</p>
+    <h3>HistêÂ³rico entre duas datas</h3>
+    <p><code>history</code> usa reanêÂ¡lise para comparar perêÂ­odos, checar uma data passada ou montar mêÂ©dias.</p>
 <pre><span class="k">python3 scripts/clima.py history --location "Porto Alegre, RS" \
   --start 2025-01-01 --end 2025-01-31</span></pre>
   </div></div>
 
   <div class="step"><div class="b">7</div><div>
-    <h3>Ver todas as opÃ§Ãµes</h3>
-    <p>Cada subcomando tem o prÃ³prio <code>--help</code> com as variÃ¡veis e limites disponÃ­veis.</p>
+    <h3>Ver todas as opêÂ§êÂµes</h3>
+    <p>Cada subcomando tem o prêÂ³prio <code>--help</code> com as variêÂ¡veis e limites disponêÂ­veis.</p>
 <pre><span class="k">python3 scripts/clima.py --help</span>
 <span class="k">python3 scripts/clima.py forecast --help</span></pre>
   </div></div>
@@ -226,28 +226,28 @@
 <section id="exemplos"><div class="wrap">
   <span class="chip">Exemplos</span>
   <h2>Perguntas que a skill responde</h2>
-  <p class="sub">VocÃª nÃ£o precisa lembrar dos comandos: pergunte em portuguÃªs e o Claude escolhe a consulta, lÃª os campos relevantes e responde. Por baixo, Ã© isto que roda.</p>
+  <p class="sub">VocêÂª nêÂ£o precisa lembrar dos comandos: pergunte em portuguêÂªs e o Claude escolhe a consulta, lêÂª os campos relevantes e responde. Por baixo, êÂ© isto que roda.</p>
   <div class="ex">
     <div class="card">
-      <h3>ðŸƒ "Posso correr amanhÃ£ de manhÃ£?"</h3>
-      <p>Combina previsÃ£o horÃ¡ria com UV e qualidade do ar para achar a melhor janela.</p>
+      <h3>ê°Å¸ÂÆ "Posso correr amanhêÂ£ de manhêÂ£?"</h3>
+      <p>Combina previsêÂ£o horêÂ¡ria com UV e qualidade do ar para achar a melhor janela.</p>
 <pre><span class="k">python3 scripts/clima.py forecast --location "Curitiba, PR" --days 2 --hourly</span>
 <span class="k">python3 scripts/clima.py air --location "Curitiba, PR" --days 2 --hourly</span></pre>
     </div>
     <div class="card">
-      <h3>ðŸ–ï¸ "DÃ¡ praia no fim de semana em Ubatuba?"</h3>
-      <p>Junta o tempo em terra com ondas e temperatura do mar â€” com o aviso de que modelo nÃ£o substitui salvamento.</p>
+      <h3>ê°Å¸Ââê¯Â¸Â "DêÂ¡ praia no fim de semana em Ubatuba?"</h3>
+      <p>Junta o tempo em terra com ondas e temperatura do mar ê¢â¬â com o aviso de que modelo nêÂ£o substitui salvamento.</p>
 <pre><span class="k">python3 scripts/clima.py forecast --location "Ubatuba, SP" --days 3</span>
 <span class="k">python3 scripts/clima.py marine --location "Ubatuba, SP" --days 3</span></pre>
     </div>
     <div class="card">
-      <h3>ðŸ§³ "O que levar para SÃ£o Paulo semana que vem?"</h3>
-      <p>Temperatura, sensaÃ§Ã£o tÃ©rmica, vento e chuva viram recomendaÃ§Ã£o de roupa e itens Ãºteis.</p>
-<pre><span class="k">python3 scripts/clima.py forecast --location "SÃ£o Paulo, SP" --days 7</span></pre>
+      <h3>ê°Å¸Â§Â³ "O que levar para SêÂ£o Paulo semana que vem?"</h3>
+      <p>Temperatura, sensaêÂ§êÂ£o têÂ©rmica, vento e chuva viram recomendaêÂ§êÂ£o de roupa e itens êÂºteis.</p>
+<pre><span class="k">python3 scripts/clima.py forecast --location "SêÂ£o Paulo, SP" --days 7</span></pre>
     </div>
     <div class="card">
-      <h3>ðŸ“Š "Janeiro passado foi mais chuvoso que a mÃ©dia?"</h3>
-      <p>ReanÃ¡lise entre duas datas, com o perÃ­odo e a fonte declarados na resposta.</p>
+      <h3>ê°Å¸âÅ  "Janeiro passado foi mais chuvoso que a mêÂ©dia?"</h3>
+      <p>ReanêÂ¡lise entre duas datas, com o perêÂ­odo e a fonte declarados na resposta.</p>
 <pre><span class="k">python3 scripts/clima.py history --location "Porto Alegre, RS" \
   --start 2025-01-01 --end 2025-01-31</span></pre>
     </div>
@@ -256,20 +256,20 @@
 
 <section id="roadmap"><div class="wrap">
   <span class="chip">Roadmap</span>
-  <h2>Onde estÃ¡ e para onde vai</h2>
-  <p class="sub">A skill jÃ¡ cobre as seis consultas e a camada de interpretaÃ§Ã£o. O que vem depois Ã© profundidade, nÃ£o escopo novo.</p>
-  <div class="phase"><div class="tag">Pronto</div><div class="d"><strong>Consulta + interpretaÃ§Ã£o</strong><span>Os seis subcomandos, o guia de cÃ³digos WMO / AQI / UV, as regras de risco e o modelo de resposta estruturada.</span></div></div>
-  <div class="phase"><div class="tag">Pronto</div><div class="d"><strong>RecomendaÃ§Ã£o por atividade</strong><span>Roupa, exercÃ­cio, viagem/evento, praia/mar e saÃºde â€” cada uma com o conjunto de variÃ¡veis que importa.</span></div></div>
-  <div class="phase"><div class="tag">PrÃ³ximo</div><div class="d"><strong>ComparaÃ§Ã£o entre cidades</strong><span>Consulta em lote para colocar dois ou mais lugares lado a lado na mesma janela de tempo.</span></div></div>
-  <div class="phase"><div class="tag">Depois</div><div class="d"><strong>Ponte com alertas oficiais</strong><span>Apontar a autoridade meteorolÃ³gica adequada ao paÃ­s quando a triagem indicar risco relevante.</span></div></div>
+  <h2>Onde estêÂ¡ e para onde vai</h2>
+  <p class="sub">A skill jêÂ¡ cobre as seis consultas e a camada de interpretaêÂ§êÂ£o. O que vem depois êÂ© profundidade, nêÂ£o escopo novo.</p>
+  <div class="phase"><div class="tag">Pronto</div><div class="d"><strong>Consulta + interpretaêÂ§êÂ£o</strong><span>Os seis subcomandos, o guia de cêÂ³digos WMO / AQI / UV, as regras de risco e o modelo de resposta estruturada.</span></div></div>
+  <div class="phase"><div class="tag">Pronto</div><div class="d"><strong>RecomendaêÂ§êÂ£o por atividade</strong><span>Roupa, exercêÂ­cio, viagem/evento, praia/mar e saêÂºde ê¢â¬â cada uma com o conjunto de variêÂ¡veis que importa.</span></div></div>
+  <div class="phase"><div class="tag">PrêÂ³ximo</div><div class="d"><strong>ComparaêÂ§êÂ£o entre cidades</strong><span>Consulta em lote para colocar dois ou mais lugares lado a lado na mesma janela de tempo.</span></div></div>
+  <div class="phase"><div class="tag">Depois</div><div class="d"><strong>Ponte com alertas oficiais</strong><span>Apontar a autoridade meteorolêÂ³gica adequada ao paêÂ­s quando a triagem indicar risco relevante.</span></div></div>
 </div></section>
 
 <footer>
   <div class="wrap">
     <div class="pill">Python 3</div><div class="pill">Open-Meteo</div><div class="pill">Claude Skill</div><div class="pill">Sem chave de API</div>
-    <p style="margin-top:18px">Clima Â· dados por Open-Meteo Â·
-      <a href="https://github.com/linnoff88-dev/clima-skill">linnoff88-dev/clima-skill</a> Â·
-      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
+    <p style="margin-top:18px">Clima êÂ· dados por Open-Meteo êÂ·
+      <a href="https://github.com/linnoff88-dev/clima-skill">linnoff88-dev/clima-skill</a> êÂ·
+      <a href="https://ARCKHê AI">ARCKHê AI</a></p>
   </div>
 </footer>
 
@@ -277,10 +277,10 @@
   (function(){
     var KEY='clima-skill-theme';
     var b=document.body, t=document.getElementById('themeToggle');
-    if(localStorage.getItem(KEY)==='light'){ b.classList.add('light'); t.textContent='â˜€ï¸'; }
+    if(localStorage.getItem(KEY)==='light'){ b.classList.add('light'); t.textContent='ê¢Ëâ¬ê¯Â¸Â'; }
     t.addEventListener('click',function(){
       var light=b.classList.toggle('light');
-      t.textContent=light?'â˜€ï¸':'ðŸŒ™';
+      t.textContent=light?'ê¢Ëâ¬ê¯Â¸Â':'ê°Å¸Åâ¢';
       localStorage.setItem(KEY, light?'light':'dark');
     });
   })();

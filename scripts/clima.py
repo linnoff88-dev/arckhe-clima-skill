@@ -101,7 +101,7 @@ def geocode(name: str, language: str, country_code: str | None, count: int = 5) 
     )
     results = payload.get("results") or []
     if not results:
-        raise CliError(f"Local não encontrado: {name}")
+        raise CliError(f"Local nêo encontrado: {name}")
     return {"results": results, "source_url": source_url}
 
 
@@ -144,7 +144,7 @@ def detect_forecast_risks(payload: dict[str, Any]) -> list[dict[str, str]]:
         day = row["time"]
         checks = (
             ("tempestade", row.get("weather_code") in (95, 96, 99), "código WMO indica trovoada"),
-            ("chuva forte", (row.get("precipitation_sum") or 0) >= 30, "precipitação diária ≥ 30 mm"),
+            ("chuva forte", (row.get("precipitation_sum") or 0) >= 30, "precipitaçêo diária ≥ 30 mm"),
             ("alta chance de chuva", (row.get("precipitation_probability_max") or 0) >= 70, "probabilidade máxima ≥ 70%"),
             ("vento forte", (row.get("wind_gusts_10m_max") or 0) >= 60, "rajadas ≥ 60 km/h"),
             ("calor intenso", (row.get("temperature_2m_max") or -999) >= 35, "máxima ≥ 35 °C"),
@@ -177,7 +177,7 @@ def base_parser(subparsers: Any, name: str, help_text: str) -> argparse.Argument
     parser.add_argument("--latitude", type=float)
     parser.add_argument("--longitude", type=float)
     parser.add_argument("--country-code", help="Filtro ISO alpha-2, por exemplo BR")
-    parser.add_argument("--language", default="pt", help="Idioma da geocodificação")
+    parser.add_argument("--language", default="pt", help="Idioma da geocodificaçêo")
     return parser
 
 
@@ -191,7 +191,7 @@ def build_parser() -> argparse.ArgumentParser:
     geo.add_argument("--language", default="pt")
     geo.add_argument("--count", type=int, default=5, choices=range(1, 101), metavar="1..100")
 
-    forecast = base_parser(sub, "forecast", "Clima atual e previsão")
+    forecast = base_parser(sub, "forecast", "Clima atual e previsêo")
     forecast.add_argument("--days", type=int, default=7, choices=range(1, 17), metavar="1..16")
     forecast.add_argument("--hourly", action="store_true", help="Incluir série horária")
 
@@ -203,7 +203,7 @@ def build_parser() -> argparse.ArgumentParser:
     marine.add_argument("--days", type=int, default=7, choices=range(1, 17), metavar="1..16")
     marine.add_argument("--hourly", action="store_true")
 
-    flood = base_parser(sub, "flood", "Vazão fluvial modelada")
+    flood = base_parser(sub, "flood", "Vazêo fluvial modelada")
     flood.add_argument("--days", type=int, default=14, choices=range(1, 211), metavar="1..210")
 
     history = base_parser(sub, "history", "Histórico meteorológico")
